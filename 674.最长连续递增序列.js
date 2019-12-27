@@ -10,10 +10,8 @@
  * @return {number}
  */
 var findLengthOfLCIS = function(nums) {
-    if (nums.length === 0) {
-        return 0;
-    } else if (nums.length === 1) {
-        return 1;
+    if (nums.length <= 1) {
+        return nums.length;
     }
 
     let result = 0;
