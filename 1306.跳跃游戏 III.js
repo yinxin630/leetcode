@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode.cn id=1305 lang=javascript
+ * @lc app=leetcode.cn id=1306 lang=javascript
  *
  * [1306] 跳跃游戏 III
  * 
