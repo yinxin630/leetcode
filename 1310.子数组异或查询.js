@@ -23,10 +23,3 @@ var xorQueries = function(arr, queries) {
 
     return result;
 };
-
-// console.log(xorQueries(arr = [1,3,4,8], queries = [[0,1],[1,2],[0,3],[3,3]]));
-// console.log(xorQueries(arr = [4,8,2,10], queries = [[2,3],[1,3],[0,0],[0,3]]));
-
-// const arr = new Array(30000).fill(3);
-// const queries = new Array(30000).fill([0, 29999]);
-// console.log(xorQueries(arr, queries));

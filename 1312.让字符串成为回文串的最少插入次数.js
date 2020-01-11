@@ -23,8 +23,6 @@ var minInsertions = function(s) {
     const b = s.split('').reverse().join('');
     const dp = [];
 
-    // console.log(a, b);
-
     for (let i = 0; i <= a.length; i++) {
         dp[i] = [];
         for (let j = 0; j <= b.length; j++) {
@@ -40,8 +38,5 @@ var minInsertions = function(s) {
         }
     }
 
-    // console.log(dp);
     return s.length - dp[s.length][s.length];
 };
-
-// console.log(minInsertions("no"));
