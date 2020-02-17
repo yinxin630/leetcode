@@ -1,6 +1,6 @@
 
 var ProductOfNumbers = function() {
-    this.nums = [];
+    this.results = [1];
 };
 
 /** 
@@ -8,7 +8,11 @@ var ProductOfNumbers = function() {
  * @return {void}
  */
 ProductOfNumbers.prototype.add = function(num) {
-    this.nums.push(num);
+    if (num === 0) {
+        this.results = [1];
+    } else {
+        this.results.push(this.results[this.results.length - 1] * num);
+    }
 };
 
 /** 
@@ -16,15 +20,11 @@ ProductOfNumbers.prototype.add = function(num) {
  * @return {number}
  */
 ProductOfNumbers.prototype.getProduct = function(k) {
-    if (this.nums.length === 0) {
+    if (k >= this.results.length) {
         return 0;
+    } else {
+        return this.results[this.results.length - 1] / this.results[this.results.length - 1 - k];
     }
-    let result = this.nums[this.nums.length - 1];
-    while (k > 1) {
-        result *= this.nums[this.nums.length - k];
-        k--;
-    }
-    return result;
 };
 
 /** 
@@ -33,3 +33,5 @@ ProductOfNumbers.prototype.getProduct = function(k) {
  * obj.add(num)
  * var param_2 = obj.getProduct(k)
  */
+
+ // 1 2 6 24
