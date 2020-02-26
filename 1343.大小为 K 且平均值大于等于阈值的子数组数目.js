@@ -21,5 +21,3 @@ var numOfSubarrays = function(arr, k, threshold) {
 
     return result;
 };
-
-console.log(numOfSubarrays(arr = [7,7,7,7,7,7,7], k = 7, threshold = 7));
