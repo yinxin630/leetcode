@@ -43,5 +43,3 @@ var orangesRotting = function(grid) {
 
     return good === 0 ? count - 1 : -1;
 };
-
-console.log(orangesRotting([[2,1,1],[1,1,0],[0,1,1]]));

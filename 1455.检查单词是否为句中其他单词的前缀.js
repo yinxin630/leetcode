@@ -7,5 +7,3 @@ var isPrefixOfWord = function(sentence, searchWord) {
     const i =  sentence.split(' ').findIndex(x => x.startsWith(searchWord));
     return i === -1 ? -1 : i + 1;
 };
-
-console.log(isPrefixOfWord(sentence = "i am tired", searchWord = "you"));

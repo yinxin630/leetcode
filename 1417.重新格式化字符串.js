@@ -26,5 +26,3 @@ var reformat = function(s) {
     }
     return result.join('');
 };
-
-console.log(reformat("ab123"));

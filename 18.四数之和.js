@@ -40,6 +40,3 @@ var fourSum = function(nums, target) {
 
     return result;
 };
-
-console.log(fourSum([-3,-1,0,2,4,5],
-    2));

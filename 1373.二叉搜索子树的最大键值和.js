@@ -27,32 +27,3 @@ var maxSumBST = function(root) {
     dfs(root);
     return result;
 };
-
-console.log(maxSumBST(arrayToTree([5,4,8,3,null,6,3])));
-
-function arrayToTree(arr) {
-    function TreeNode(val) {
-        this.val = val;
-        this.left = this.right = null;
-    }
-    if (arr.length === 0) {
-        return null;
-    }
-    const root = new TreeNode(arr[0]);
-    const list = [root];
-    let i = 1;
-    while (list.length > 0) {
-        const node = list.shift();
-        if (typeof arr[i] === 'number') {
-            node.left = new TreeNode(arr[i]);
-            list.push(node.left);
-        }
-        i++;
-        if (typeof arr[i] === 'number') {
-            node.right = new TreeNode(arr[i]);
-            list.push(node.right);
-        }
-        i++;
-    }
-    return root;
-}

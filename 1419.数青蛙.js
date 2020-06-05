@@ -50,5 +50,3 @@ var minNumberOfFrogs = function(croakOfFrogs) {
     }
     return max;
 };
-
-console.log(minNumberOfFrogs('croakcroka'));

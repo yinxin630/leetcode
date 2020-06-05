@@ -15,10 +15,8 @@ var displayTable = function(orders) {
 
     const result = [['Table']];
     result[0].push(...Array.from(foods).sort((a, b) => a < b ? -1 : 1));
-    // console.log(result);
 
     const tables = Array.from(table.keys()).sort((a, b) => +a - +b);
-    // console.log(tables);
     for (const t of tables) {
         const a = [t];
         const m = table.get(t);
@@ -29,5 +27,3 @@ var displayTable = function(orders) {
     }
     return result;
 };
-
-console.log(displayTable(orders = [["Laura","2","Bean Burrito"],["Jhon","2","Beef Burrito"],["Melissa","2","Soda"]]));

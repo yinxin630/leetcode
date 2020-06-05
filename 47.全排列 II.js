@@ -26,5 +26,3 @@ var permuteUnique = function(nums) {
 
     return result;
 };
-
-console.log(permuteUnique([1, 3, 2]));

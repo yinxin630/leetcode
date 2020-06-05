@@ -19,5 +19,3 @@ var maxVowels = function(s, k) {
     }
     return result;
 };
-
-console.log(maxVowels(s = "tryhard", k = 4));

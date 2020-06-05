@@ -15,5 +15,3 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
     }
     return dp[obstacleGrid[0].length - 1];
 };
-
-console.log(uniquePathsWithObstacles([[1]]));

@@ -26,9 +26,3 @@ var spiralOrder = function(matrix) {
     }
     return result;
 };
-
-console.log(spiralOrder(
-    [
-        [1, 2]
-      ]
-));
