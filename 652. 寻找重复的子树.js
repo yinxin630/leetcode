@@ -59,5 +59,3 @@ function arrayToTree(arr) {
   }
   return root;
 }
-
-console.log(findDuplicateSubtrees(arrayToTree([0, 0, 0, 0, null, null, 0, null, null, null, 0])));
